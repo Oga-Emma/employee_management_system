@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.admin.AdminEmployeeBio">
+   <children>
+      <HBox layoutX="16.0" layoutY="93.0" prefHeight="39.0" prefWidth="484.0" spacing="8.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="93.0">
+         <children>
+            <JFXTextField focusColor="RED" prefHeight="37.0" promptText="Search employee" unFocusColor="BLACK" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" prefHeight="40.0" style="-fx-border-color: #000;" text="Search" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SEARCH" size="20" />
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Text layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE INFORMATION" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="16.0" layoutY="140.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <JFXTreeTableView prefHeight="344.0" prefWidth="421.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ButtonBar buttonMinWidth="100.0" prefHeight="40.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <buttons>
+                  <JFXButton graphicTextGap="10.0" prefWidth="216.0" text="NEW EMPLOYEE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER_PLUS" size="25" />
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="10.0" text="EDIT DETAILS">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="25" />
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="10.0" text="REMOVE EMPLOYEE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TRASH" size="25" />
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="16.0" layoutY="140.0" prefHeight="200.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
