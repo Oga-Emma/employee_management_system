@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.admin.AdminUiController">
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.admin.AdminUiController">
    <children>
       <VBox layoutX="14.0" layoutY="186.0" prefHeight="496.0" prefWidth="120.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" text="ACTIVITY OVERVIEW" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" onAction="#showActivityOverview" text="ACTIVITY OVERVIEW" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                <graphic>
                   <FontAwesomeIconView glyphName="DEDENT" size="50" />
                </graphic>
@@ -20,10 +19,10 @@
                   <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
                </padding>
                <font>
-                  <Font size="14.0" />
+                  <Font size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" text="EMPLOYEES BIO DATA" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" onAction="#showEmployeeBioData" text="EMPLOYEES BIO DATA" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                <graphic>
                   <FontAwesomeIconView glyphName="GROUP" size="50" />
                </graphic>
@@ -31,10 +30,10 @@
                   <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
                </padding>
                <font>
-                  <Font size="14.0" />
+                  <Font size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" text="PREFERENCES" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" onAction="#showPreferences" text="PREFERENCES" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                <graphic>
                   <FontAwesomeIconView glyphName="COGS" size="50" />
                </graphic>
@@ -42,10 +41,10 @@
                   <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
                </padding>
                <font>
-                  <Font size="14.0" />
+                  <Font size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" text="ADMIN PROFILE" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" onAction="#showAdminProfile" text="ADMIN PROFILE" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                <graphic>
                   <FontAwesomeIconView glyphName="USER" size="50" />
                </graphic>
@@ -53,10 +52,10 @@
                   <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
                </padding>
                <font>
-                  <Font size="14.0" />
+                  <Font size="12.0" />
                </font>
             </JFXButton>
-            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" text="SIGNOUT" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+            <JFXButton contentDisplay="TOP" minHeight="120.0" minWidth="120.0" onAction="#signout" text="SIGNOUT" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                <graphic>
                   <FontAwesomeIconView glyphName="POWER_OFF" size="50" />
                </graphic>
@@ -64,10 +63,11 @@
                   <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
                </padding>
                <font>
-                  <Font size="14.0" />
+                  <Font size="12.0" />
                </font>
             </JFXButton>
          </children>
       </VBox>
+      <AnchorPane fx:id="containerPane" layoutX="116.0" layoutY="-2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

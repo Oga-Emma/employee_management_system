@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.user.UserUiController">
+   <children>
+      <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <SplitPane dividerPositions="0.5160320641282565" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="450.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+                  <ButtonBar prefHeight="40.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <buttons>
+                        <JFXButton contentDisplay="TOP" prefWidth="300.0" text="START CAPTURE">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PLAY_CIRCLE_ALT" size="30" />
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" prefWidth="300.0" text="STOP CAPTURE">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PAUSE_CIRCLE_ALT" size="30" />
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane prefHeight="568.0" prefWidth="450.0" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="47.0" layoutY="438.0" text="Welcome back" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="125.0" layoutY="482.0" text="EMMANUEL ANI" textFill="#008626" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="321.0" fitWidth="408.0" layoutX="21.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="80.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <JFXButton text="ADMIN" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="8.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="20" />
+         </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
